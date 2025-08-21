@@ -1,0 +1,28 @@
+programa {
+  funcao inicio() {  
+
+   inteiro preco_grande , preco_media , preco_peq , qnt_peq , qnt_grande , qnt_media 
+   real venda_peq , venda_media , venda_grande , venda_total
+
+   // pequeno : 10 
+   // medio : 12 
+   // grande : 15 
+   // venda_media : quantidade_de_media  * preço_media 
+  escreva("Bem vindo à C&A")
+  escreva("quantidade de camisas pequenas : ")
+  leia(qnt_peq)
+  escreva("quantidade de camisas médias : ")
+  leia(qnt_media)
+  escreva("quantidade de camisas grandes :  ")
+  leia(qnt_grande)
+   preco_peq = 10 
+   preco_media = 12 
+   preco_grande = 15
+   
+   venda_peq = qnt_peq * preco_peq 
+   venda_media = qnt_media * preco_media
+   venda_grande = qnt_grande * preco_grande 
+   venda_total = venda_grande + venda_media + venda_peq
+   escreva("venda total : " , venda_total)
+  }
+}
