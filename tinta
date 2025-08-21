@@ -1,0 +1,30 @@
+programa {
+  funcao inicio() {  
+    real largura , altura , tinta , area , area_pint , tinta_toda
+    // cada 1 litro de tinta pinta 2 m² 
+    // quan
+  
+    escreva("largura : ")
+    leia(largura)
+    escreva("altura : ")
+    leia(altura)
+    escreva("quantidade de tinta : ")
+    leia(tinta)
+    area = largura * altura 
+    area_pint = tinta * 2 
+    tinta_toda = area * 2 
+    escreva("quantidade de tinta necessária : ",tinta_toda , "\n" , "area pintada : " , area_pint)
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+}
