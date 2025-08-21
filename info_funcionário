@@ -1,0 +1,36 @@
+programa {
+  funcao inicio() {
+    cadeia nome ,estad_c
+    inteiro idade , tempo 
+    real adic_prom
+    
+    escreva("nome : ")
+    escreva("\n")
+    leia(nome)
+
+    escreva("estado civil : ")
+    escreva("\n")
+    leia(estad_c)
+
+    escreva("idade : ")
+    escreva("\n")
+    leia(idade)
+
+    escreva("tempo :")
+    escreva("\n")
+    leia(tempo)
+
+    escreva("adic_prom : ")
+    escreva("\n")
+    leia(adic_prom)
+    
+    escreva("nome: ",nome)
+    escreva("\n")
+    escreva("idade : ",idade)
+    escreva("\n")
+    escreva("estado civil : ",estad_c)
+    escreva("\n")
+    escreva("tempo : ",tempo)
+    escreva("\n")
+    escreva("adicional da promoção : ",adic_prom)
+    escreva("\n")
