@@ -1,0 +1,27 @@
+programa {
+  funcao inicio() {
+//     O usuário deverá inserir sua idade no sistema, após isso, deverá ser verificado
+// Se a sua idade é menor que 16 anos, se for verdadeiro, emitir na tela a
+// mensagem “Você não pode votar!”. Senão, se a sua idade estiver entre (ou
+// igual) 18 e 70 anos apresente a mensagem “Voto obrigatório”. Senão
+// apresente a mensagem “Voto opcional”.
+
+// 3 ações possíveis:
+
+// 1 – Emitir a mensagem “Você não pode votar”
+// 2 – Emitir a mensagem “Voto obrigatório”
+// 3 – Emitir a mensagem “Voto opcional”
+  inteiro idade 
+
+  escreva("idade :")
+
+  se (idade < 16){
+    print("Você não pode votar!")
+  }
+  senao se(18 <= idade <= 70){
+    escreva("voto opcional")
+  }senao {
+    escreva("voto opcional")
+  }
+  }
+}
