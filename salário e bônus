@@ -1,0 +1,17 @@
+"""O Porto Digital deseja enviar uma mensagem aos seus funcionários informando sobre um bônus especial.
+"""Escreva um programa que receba o valor do salário mensal dofuncionário, e sobre esse salário, calcule um bônus de 10%."""
+"""Ao final, imprima na tela o salário inicial, o salário final e quanto deacréscimo o funcionário recebeu em reais."""
+
+programa {
+  //local de incluir biblioteca 
+  inclua biblioteca Matematica
+  funcao inicio() {
+  real salario_i , salario_f , bonus 
+  escreva("escreva o seu salario :\n")
+  leia(salario_i)
+
+  bonus = 0.1*salario_i 
+  salario_f = bonus + salario_i
+  Matematica.arredondar(salario_f,1)
+
+  escreva("seu salário após o bônus é : ", salario_f)
