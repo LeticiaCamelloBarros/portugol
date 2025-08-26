@@ -1,4 +1,3 @@
-
 // Um determinado sistema solicita que o usuário insira dois valores inteiros.
 // Logo após, o sistema apresenta três opções de operações que poderão ser
 // executadas, o usuário precisa escolher uma delas:
@@ -10,26 +9,35 @@
 // Caso contrário, se for uma opção inválida, o Sistema precisa notificar.
 
 // Considere o caractere maiúsculo ou minúsculo.
-
-
 programa {
   funcao inicio() {
-    cadeia choice 
-    real n1 , n2 , acao
+    real acao , n1 , n2
+    cadeia opcao
 
-   escreva("escolha uma operação para ser realizada : \n")
-   escreva("[S]-soma \n[M]-multiplicação \n[D]-diferença \n")
-   leia(choice)
+    escreva("Qual operação você quer realizar ? ")
+    leia(opcao)
+    escreva("número 1 : ")
+    leia(n1)
+    escreva("número 2 : ")
+    leia(n2)
 
-   escreva("digite os dois números : \n")
-   leia(n1)
-   leia(n2)
-    se(choice == "S" ou choice == "s"){
-       acao = n1 + n2 
-  }senao se (choice == "M" ou choice == "m"){
-       acao = n1 * n2 
-  }senao se (choice == "D" ou choice == "d"){
-       acao = n1 - n2 
+    se (opcao == "M" ou opcao == "m"){
+      acao = n1 * n2 
+      escreva("resultado : ",acao )
+    }senao se (opcao == "D" ou opcao == "d"){
+      acao = n1 - n2
+      escreva("resultado : ",acao )
+    }senao se (opcao == "S" ou opcao == "s"){
+      acao = n1 + n2 
+      escreva("resultado : ",acao )
+    }senao{
+      escreva("opção inválida")
+    }
+
+
+
+
+
+
   }
-
-  escreva("resultado : " , acao)
+}
