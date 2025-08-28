@@ -1,0 +1,21 @@
+programa {
+  funcao inicio() {
+    // variáveis : numero da tabuada , numero de inicio , numero de final . 
+    inteiro n_tab , n_i , n_f , cont , resultado 
+    cadeia string
+    // n_tab : numero da tabuada , n_i : numero de inicio  , n_f :  numero de final
+    escreva("Qual o número você quer fazer a tabuada ? : ")
+    leia(n_tab)
+    escreva("Qual o número de inicio da tabuada ? : ")
+    leia(n_i)
+    escreva("Qual o número final da tabuada ? : ")
+    leia(n_f)
+    escreva("----------------------TaBuAdA---------------------"+"\n")
+    para(cont = n_i ;cont<=n_f;cont++){
+       resultado = n_tab * cont
+       escreva(n_tab," x ",cont," = ",resultado,"\n")
+    }
+
+
+  }
+}
