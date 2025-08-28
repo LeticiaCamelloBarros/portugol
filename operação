@@ -1,0 +1,30 @@
+programa {
+  funcao inicio() {
+// Um determinado sistema solicita que o usuário insira dois valores inteiros.
+// Logo após, o sistema apresenta três opções de operações que poderão ser
+// executadas, o usuário precisa escolher uma delas:
+// [S] Soma
+// [M] Multiplicação
+// [D] diferença
+
+// Caso contrário, se for uma opção inválida, o Sistema precisa notificar.
+   cadeia operacao ,resultado_string
+      real n1 , n2 , resultado 
+
+  escreva("Qual o seu primeiro numero : \n")
+  leia(n1)
+  escreva("Qual o seu segundo numero : \n")
+  leia(n2)
+  escreva("Qual operação você quer fazer ? : ")
+  escreva("\n[S] Soma\n[M] Multiplicação\n[D] diferença\n")
+  leia(operacao)
+   se (operacao =="M"){
+      resultado = n1 * n2 
+      escreva(n1 , " x " , n2 , " = " , resultado )
+   }senao se (operacao =="D"){
+      resultado = n1 - n2 
+      escreva(n1 , " - " , n2 , " = " , resultado )
+   }senao se (operacao == "S"){
+      resultado = n1 + n2 
+      escreva(n1 , " + " , n2 , " = " , resultado )
+   }
