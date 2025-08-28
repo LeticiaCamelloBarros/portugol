@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+  inteiro compras_ac_100=0 , vezes_loop 
+  real total_gasto=0 ,  gasto_cliente
+
+  para(vezes_loop=1;vezes_loop<6;vezes_loop++){
+      escreva("---------------cliente [",vezes_loop,"]-----------------"+"\n")
+      escreva("Quanto gastaste em compras ? : \n")
+      leia(gasto_cliente)
+      total_gasto+= gasto_cliente
+      se (gasto_cliente>100){
+        compras_ac_100++
+      }
+      escreva("Quantidade de compras acima de 100 : ", compras_ac_100,"\n")
+      escreva("Total gasto por todos os 5 clientes : ",total_gasto,"\n")
+
+
+
+
+  } 
+
+  }
+}
