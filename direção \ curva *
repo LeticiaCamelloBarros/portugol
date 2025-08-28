@@ -1,0 +1,25 @@
+programa {
+  funcao inicio() {
+   inteiro curva_esq=0 , curva_dir=0 , ind_inc=0  ,vezes 
+   cadeia direcao
+   //
+   para(vezes = 1 ; vezes<=10 ; vezes++){
+    escreva("Aonde você quer ir ? \n(escreva 'D' para a direita e escreva 'E' para a esquerda )\n")
+        leia(direcao)
+        
+        se (direcao=="D"){
+          curva_dir++
+        }senao se (direcao =="E"){
+          curva_esq++
+        }senao {
+          ind_inc++
+        }
+
+   }
+   escreva("curvas à direita : ",curva_dir,"\n",
+           "curvas à esquerda : ",curva_esq,"\n",
+            "respostas incorretas : ",ind_inc,"\n")
+        
+
+  }
+}
