@@ -1,3 +1,11 @@
+// Você foi contratado como gerente de uma loja de brinquedos. A loja tem 5 clientes
+// fixos que compram brinquedos todos os meses. Sua tarefa é rastrear o valor gasto
+// por cada cliente em cada compra e fornecer um resumo ao final do mês.
+// Escreva um programa que:
+// 1. Solicite o nome e o valor gasto por cada um dos 5 clientes em suas compras ao
+// longo do mês.
+// 2. Exiba o valor total gasto pelos clientes (somatório de tudo).
+// 3. Conte e exiba quantas compras foram feitas com valor acima de 100 reais.
 programa {
   funcao inicio() {
   inteiro compras_ac_100=0 , vezes_loop 
