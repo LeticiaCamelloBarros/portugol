@@ -1,0 +1,39 @@
+programa {
+  funcao inicio() {
+    inteiro opcao ,cont , n_romance = 0 , n_ficcao_c = 0 , n_misterio = 0 , n_n_ficao = 0 
+//     Uma revista está realizando uma pesquisa para
+// determinar qual é o gênero literário preferido entre os leitores. Desenvolva um
+// programa que leia os resultados dessa pesquisa, onde as opções são:
+// 1.Romance
+// 2.Ficção Científica
+// 3.Mistério
+// 4.Não Ficção
+// O programa deve receber 10 votos, calcular e exibir o resultado, mostrando o
+// número total de votos para cada gênero. Bem como, exibir o quantitativo de votos
+// inválidos (fora do intervalo de 1 a 4). Ou seja, se o usuário digitar 1, significa que
+// escolheu Romance, e assim sucessivamente. Utilize o para.
+
+para(cont = 1 ;cont <=10;cont++){
+  escreva("------------------escolha um genero literario----------------------\n")
+  escreva("digite : \n1.Romance\n2.Ficção Científica\n3.Mistério\n4.Não Ficção\n")
+  leia(opcao)
+  se (opcao == 1){
+     n_romance ++ 
+  }senao se (opcao == 2){
+    n_ficcao_c ++
+  }senao se (opcao == 3 ){
+    n_misterio ++
+  }senao se (opcao == 4){
+    n_n_ficao ++ 
+  }senao {
+    escreva("opção inválida\n")
+  }
+}
+escreva(
+"#Romance : ",n_romance,"\n",
+"#Ficção Científica : ",n_ficcao_c,"\n",
+"#Mistério : ",n_misterio,"\n",
+"#Não Ficção : ",n_n_ficao
+)
+  }
+}
