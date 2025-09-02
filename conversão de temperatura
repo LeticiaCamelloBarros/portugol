@@ -1,0 +1,28 @@
+programa {
+  funcao inicio() {
+    real temperatura , temp_convertida 
+    caracter choice 
+// //  Escreva um programa que permita ao usuário converter uma
+// temperatura de Celsius para Fahrenheit ou vice-versa. O usuário deve escolher a
+// unidade para qual deseja converter (C ou F) e inserir a temperatura.
+// As fórmulas de conversão são:
+// De Celsius para Fahrenheit De Fahrenheit para Celsius:
+// Fahrenheit = (Celsius * 9/5) + 32 Celsius = (Fahrenheit - 32) * 5/9
+// Caso ele escolha uma opção diferente das disponíveis, notificar.
+  escreva("para converter de Fahrenheit para Celcius escreva C  \npara converter de Celcius para Fahrenheit escreva f \n qual operação queres fazer ? : ")
+  leia(choice)
+  se (choice == 'c' ou choice == 'C'){
+  escreva("escreva a temperatura em Fahrenheit que você deseja converter para Celcius : ")
+  leia(temperatura)
+  temp_convertida = (temperatura - 32) * 5/9
+  escreva("temperatura convertida de Fahrenheit para Celcius : ", temp_convertida)
+  }senao se (choice == 'F' ou choice == 'f'){
+  escreva("escreva a temperatura em Celcius que você deseja converter para  Fahrenheit : ")
+  leia(temperatura)
+  temp_convertida = (temperatura * 9/5) + 32
+    escreva("temperatura convertida de Celcius para  Fahrenheit : ", temp_convertida)
+
+  }senao {
+    // casos inválidos 
+    escreva("escolha inválida")
+  
