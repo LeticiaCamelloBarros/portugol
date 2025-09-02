@@ -1,0 +1,20 @@
+// faça um programa que receba a média de 5 escolas , conte a quantidade de escolas com a média maior que 7 e some a média das notas 
+
+programa {
+  funcao inicio() {
+    inteiro cont
+    real media_por_escola , soma_medias = 0 , media_sup7 = 0 
+    // "media_sup7" , variável que guarda a quantidade de escolas com a média superior a 7 
+    // "soma_medias" , variável que guarda a soma das medias 
+    para(cont = 1 ; cont<=5 ; cont++){
+        escreva("qual a média dos alunos da sua escola\n") 
+        leia(media_por_escola)
+        soma_medias = soma_medias + media_por_escola  
+        se (media_por_escola > 7){
+          media_sup7 ++
+        }
+     }
+     escreva("A.Quantidade de escolas com média superior a 7.0 : ",media_sup7,"\n")
+     escreva("B.A soma total das médias das cinco escolas : ",soma_medias)
+  }
+}
