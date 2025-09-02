@@ -1,3 +1,12 @@
+//     Escreva um programa que conte a quantidade de curvas para a
+// esquerda e para a direita indicadas por um GPS. Para uma curva à
+// esquerda, o GPS pode considerar: E, Esq ou Esquerda. Para uma curva à
+// direita, o GPS pode considerar D, Dir ou Direita.
+
+// Qualquer outra indicação que não seja curva à esquerda ou à direita
+// deve ser contada como incorreta. Seu programa deve ler as indicações
+// do GPS e contar quantas curvas foram à esquerda, quantas à direita e
+// quantas indicações incorretas foram dadas.
 programa {
   funcao inicio() {
    inteiro curva_esq=0 , curva_dir=0 , ind_inc=0  ,vezes 
