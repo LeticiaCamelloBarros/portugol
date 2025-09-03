@@ -1,4 +1,3 @@
-"""faço um código que recebe a medida de 3 lados de um triângulo e vê sua classificação de acordo com isso : """
 programa {
   funcao inicio() {
     inteiro lado_1 , lado_2 , lado_3 
@@ -14,24 +13,24 @@ programa {
     leia(lado_3)
 
     se (lado_3 == lado_2 e lado_3 == lado_1){
-      // se todos os lados forem iguais : escreva "triangulo é equilátero"
-            escreva("triangulo é equilátero")
-  }senao se (lado_2 != lado_3 e lado_2 != lado_1 e lado_1 == lado_3 ){
-    // lado_3 pode ser igual ao lado_1 , mesmo o lado_2 sendo diferente dos dois : escreva "triangulo é escaleno"
-    // se não colocar o caso teste de o lado_1 sendo igual ao lado_3 . Quando bater na condição o lado_2 sendo diferente dos dois outros lados , sendo esses lados iguais entre si ou não 
-    // obedecerá esse senão se e o caso de os três lados serem diferentes não será verificado . 
-    // o mesmo se aplica para as próximas condicionais senão se 
-            escreva("triangulo é isoceles ")
-  }senao se (lado_1 != lado_2 e lado_1 != lado_3 e lado_2 == lado_3){
-      // lado_3 pode ser igual ao lado_2 , mesmo o lado_1 sendo diferente dos dois : escreva "triangulo é escaleno"
-            escreva("triangulo é isoceles")
-  }senao se (lado_3 != lado_2 e lado_3 != lado_1 e lado_1 == lado_2){
-          // lado_1 pode ser igual ao lado_2 , mesmo o lado_3 sendo diferente dos dois : escreva "triangulo é escaleno"
-
-      escreva("triangulo isoceles")
-  }senao {
-    // caso não cumpra nenhum dos casos os três lados do triangulo serão diferentes .
-       escreva("triangulo é escaleno")
+	      // se todos os lados forem iguais : escreva "triangulo é equilátero"
+	            escreva("triangulo é equilátero")
+	  }senao se (lado_2 != lado_3 e lado_2 != lado_1 e lado_1 == lado_3 ){
+	    // lado_3 pode ser igual ao lado_1 , mesmo o lado_2 sendo diferente dos dois : escreva "triangulo é escaleno"
+	    // se não colocar o caso teste de o lado_1 sendo igual ao lado_3 . Quando bater na condição o lado_2 sendo diferente dos dois outros lados , sendo esses lados iguais entre si ou não 
+	    // obedecerá esse senão se e o caso de os três lados serem diferentes não será verificado . 
+	    // o mesmo se aplica para as próximas condicionais senão se 
+	            escreva("triangulo é isoceles ")
+	  }senao se (lado_1 != lado_2 e lado_1 != lado_3 e lado_2 == lado_3){
+	      // lado_3 pode ser igual ao lado_2 , mesmo o lado_1 sendo diferente dos dois : escreva "triangulo é escaleno"
+	            escreva("triangulo é isoceles")
+	  }senao se (lado_3 != lado_2 e lado_3 != lado_1 e lado_1 == lado_2){
+	          // lado_1 pode ser igual ao lado_2 , mesmo o lado_3 sendo diferente dos dois : escreva "triangulo é escaleno"
+	
+	      escreva("triangulo isoceles")
+	  }senao {
+	    // caso não cumpra nenhum dos casos os três lados do triangulo serão diferentes .
+	       escreva("triangulo é escaleno")
   }
 
   }
